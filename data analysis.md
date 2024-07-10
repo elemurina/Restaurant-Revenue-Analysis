@@ -53,7 +53,7 @@
 #### Обзор общах характеристик 
 ==ссылка на sql==
 Отчет Power Bi
-==картинка===
+![Image alt](https://github.com/elemurina/Restaurant-Revenue-Analysis/blob/main/power_bi_01.png))
 
 
 #### Обзор финансовых показателей
