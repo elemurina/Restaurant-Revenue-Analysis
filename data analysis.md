@@ -188,11 +188,10 @@ Rural: Преобладает французская кухня (18.07%), зат
 Оценка атмосферы ресторанов  
 ![Image alt](https://github.com/elemurina/Restaurant-Revenue-Analysis/blob/main/box_02.png)
 
-Оценка обслуживания  
+Оценка качества обслуживания  
 ![Image alt](https://github.com/elemurina/Restaurant-Revenue-Analysis/blob/main/box_03.png)
 
-- Рейтинги ресторанов - бокс
-- Средние оценки атмосферы и качества обслуживания. - боксы
+
 
 
 
