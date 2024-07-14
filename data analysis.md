@@ -199,7 +199,7 @@ Rural: Преобладает французская кухня (18.07%), зат
 Для выявления ключевых показателей, оказывающих наибольшее влияние на выручку ресторанов, я буду использовать корреляционный анализ.  
 
 ### Корреляционный и регриссионный анализ факторов, влияющих на выручку ресторанов  
-[Расчеты корреляции и регресии: Python (pandas, matplotlib, seaborn)](https://github.com/elemurina/Restaurant-Revenue-Analysis/blob/main/corr.ipynb)  
+[Расчеты корреляции и регресии: Python (pandas, matplotlib, seaborn)](https://github.com/elemurina/Restaurant-Revenue-Analysis/blob/main/corr_and_regg.ipynb)  
 
 # Визуализация корреляционной матрицы    
 ![Image alt](https://github.com/elemurina/Restaurant-Revenue-Analysis/blob/main/corr_gray.png)  
@@ -226,15 +226,18 @@ Seating Capacity и Social Media Followers: **0.50**. Говори о том, ч
 Seating Capacity и Weekend Reservations: **0.44**. Так же говорит о том, что более крупне рестораны получают больше бронирований в выходне и будни (Weekday Reservations: **0.42**).  
 Social Media Followers и Weekend Reservations: **0.22**. Слабая корреляция говорит о том, что кол-во подписчиков в соц. сетях не сильно сказывается на количество бронирований в выходные и будние (**0.21**) дни.  
 
-#Регрессионный анализ  
+# Регрессионный анализ  
 Рассмотрим теперь силу влияния факторов на доход.  
 R² для Seating Capacity и Revenue: **0.459**.  
 Примерно **45.9%** дохода можно объяснить количеством посадочных мест. Это указывает на умеренную зависимость.  
+![Image alt](https://github.com/elemurina/Restaurant-Revenue-Analysis/blob/main/Seating_Revenue.png)  
 
 R² для Average Meal Price и Revenue: **0.471**.  
 Так же, почти половина дохода (**47,1%**) объясняется ценами на блюда.  
+![Image alt](https://github.com/elemurina/Restaurant-Revenue-Analysis/blob/main/MealPrice_Revenue.png)  
 
 R² для Marketing Budget и Social Media Followers: **0.975**. Сильная зависимость между рекламой и количеством подписчиков в соцсетях.  
+![Image alt](https://github.com/elemurina/Restaurant-Revenue-Analysis/blob/main/Marketing_Followers.png)  
 
 Показатели со слабой силой влияния на доход:
 R² для Marketing Budget и Revenue: **0.134**.  
