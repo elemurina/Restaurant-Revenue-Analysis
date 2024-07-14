@@ -1,0 +1,75 @@
+--Обзор данных
+SELECT *
+FROM `pet-restoran-79095.restoran.restoran`
+
+--Кол-во ресторанов по районам
+SELECT location, COUNT(name) AS restaurants
+FROM `pet-restoran-79095.restoran.restoran`
+GROUP BY Location
+
+
+--Кол-во ресторанов по типу кухни в каждом районе
+SELECT location, cuisine, COUNT(name) AS restaurants
+FROM `pet-restoran-79095.restoran.restoran`
+GROUP BY location, cuisine
+
+--Сумма доходов по району и % от общего дохода
+SELECT location, 
+ROUND(SUM(revenue)) AS total_revenue, 
+ROUND(SUM(revenue) / (SELECT SUM(revenue) FROM `pet-restoran-79095.restoran.restoran`) * 100, 2) AS per_total_revenue
+FROM `pet-restoran-79095.restoran.restoran` 
+GROUP BY location
+
+--Сумма доходов по типу ресторана и % от общего дохода
+SELECT cuisine, 
+ROUND(SUM(revenue)) AS total_revenue, 
+ROUND(SUM(revenue) / (SELECT SUM(revenue) FROM `pet-restoran-79095.restoran.restoran`) * 100, 2) AS per_total_revenue #
+FROM `pet-restoran-79095.restoran.restoran` 
+GROUP BY cuisine
+
+
+--Максимальная и минимальная цена за блюдо по типу ресторана и району
+SELECT location, cuisine, MIN(Average_Meal_Price) AS min_price, MAX(Average_Meal_Price) AS max_price
+FROM `pet-restoran-79095.restoran.rest_true`
+GROUP BY location, cuisine;
+
+
+--Среднее количество посадочных мест для каждого типа ресторана в каждом районе
+SELECT location, cuisine, ROUND(AVG(Seating_Capacity),0) AS Avg_Seating
+FROM `pet-restoran-79095.restoran.rest_true`
+GROUP BY location, cuisine;
+
+
+--Среднее количество бронирований в будние и выходные дни
+
+-- По району
+SELECT location,
+ROUND(AVG(Weekday_Reservations),0) AS Weekday, 
+ROUND(AVG(Weekend_Reservations),0) AS Weekend
+FROM `pet-restoran-79095.restoran.rest_true`
+GROUP BY location
+
+
+-- По кухне  
+SELECT cuisine,
+ROUND(AVG(Weekday_Reservations),0) AS Weekday, 
+ROUND(AVG(Weekend_Reservations),0) AS Weekend
+FROM `pet-restoran-79095.restoran.rest_true`
+GROUP BY cuisine
+
+
+--Маркетинговый бюджет по району и % от общего бюджета
+SELECT location,
+SUM(Marketing_Budget) AS total_budget,
+ROUND(SUM(Marketing_Budget)/ (SELECT SUM(Marketing_Budget) FROM `pet-restoran-79095.restoran.rest_true`) * 100, 2) AS per_total_budget
+FROM `pet-restoran-79095.restoran.rest_true`
+GROUP BY location
+
+
+--Маркетинговый бюджет по типу кухни и % от общего бюджета
+SELECT cuisine, 
+SUM(Marketing_Budget) AS Total_Marketing_Budget,
+ROUND(SUM(Marketing_Budget)/ (SELECT SUM(Marketing_Budget) FROM `pet-restoran-79095.restoran.rest_true`) * 100, 2) AS per_total_budget
+FROM `pet-restoran-79095.restoran.rest_true`
+GROUP BY cuisine;
+
