@@ -1,5 +1,3 @@
-# Restaurant-Revenue-Analysis
-The purpose of this project is to analyze the factors that influence restaurant revenue using data containing a variety of restaurant characteristics. I strive to identify the key factors that drive revenue growth and offer recommendations to optimize restaurant operations.
 # Анализ факторов, влияющих на доход ресторанов
 
 ## Описание
@@ -10,14 +8,14 @@ The purpose of this project is to analyze the factors that influence restaurant 
 В рамках проекта используются следующие данные о ресторанах: местоположение, тип кухни, рейтинг, вместимость, цены на блюда, маркетинговый бюджет, 
 количство подписчиков в соц. сетях, опыт шеф-повара, количество отзывов о ресторане, оценки качества обслуживания и атмосферы в ресторане.  
 
-# Выбор технологического стека 
-- Power Query: очистка данных, удаление ошибок, изменение типов данных, корректировка названий столбцов;
-- Google BigQuery и SQL: работа с базой данных, расчет показателей;
-- Excel: построение графиков;
-- Python: при помощи библиотек 
-Анализ данных проводится с использованием методов статистики, инструментов Excel, SQL и Python. 
-Визуализация выполняется с помощью Tableau, Power BI, библиотек Python и Excel, позволяющие наглядно представить выявленные закономерности и зависимости. 
+## Выбор технологического стека 
+- Power Query: очистка данных, удаление ошибок, изменение типов данных, корректировка названий столбцов;  
+- Google BigQuery и SQL: работа с базой данных, расчет показателей;  
+- Excel: построение графиков;  
+- Python: при помощи библиотек pandas, matplotlib, seaborn, sklearn выявить корреляции между доходом и другми факторами. Далее расчитать коэф-т детерминации R² для показателей высокой корреляции для оценики силы влияния связей;
+- Tableau и Power Bi: визуализации для ясного и наглядного представления результатов.  
 
+[Ссылка на дата-сет Kaggle ](https://www.kaggle.com/datasets/anthonytherrien/restaurant-revenue-prediction-dataset/data)  
 
 [Ссылка на анализ данных](https://github.com/elemurina/Restaurant-Revenue-Analysis/blob/main/data%20analysis.md) 
 
