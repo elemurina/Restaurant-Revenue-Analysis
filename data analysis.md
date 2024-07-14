@@ -199,6 +199,9 @@ Rural: Преобладает французская кухня (18.07%), зат
 Для выявления ключевых показателей, оказывающих наибольшее влияние на выручку ресторанов, я буду использовать корреляционный анализ.  
 
 ### Корреляционный анализ факторов, влияющих на выручку ресторанов  
+[Расчеты: Python (pandas, matplotlib, seaborn](https://github.com/elemurina/Restaurant-Revenue-Analysis/blob/main/corr.ipynb)
+Визуализация корреляции  
+![Image alt](https://github.com/elemurina/Restaurant-Revenue-Analysis/blob/main/corr_gray.png)
 
 
 
