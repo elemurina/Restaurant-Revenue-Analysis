@@ -51,7 +51,7 @@
 ## Анализ данных
 
 #### Обзор общих характеристик 
-==ссылка на sql==  
+[SQL-code](https://github.com/elemurina/Restaurant-Revenue-Analysis/blob/main/sql-code) 
 Отчет Power Bi
 ![Image alt](https://github.com/elemurina/Restaurant-Revenue-Analysis/blob/main/power_bi_01.png))
 
