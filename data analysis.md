@@ -203,6 +203,9 @@ Rural: Преобладает французская кухня (18.07%), зат
 ### Визуализация корреляционной матрицы    
 ![Image alt](https://github.com/elemurina/Restaurant-Revenue-Analysis/blob/main/corr_gray.png)  
 
+Так же я визуализировала матрицу корреляции в Excel, заменив названия районов, типы кухни и наличие парковки на числовые значения для понимания, есть ли связь между этими факторами и доходом (ответ: связи нет).  
+![Image alt](https://github.com/elemurina/Restaurant-Revenue-Analysis/blob/main/corr_excel.png)  
+
 **Комментарии:**  
 Высокое влияние на доход:  
 Revenue и Seating Capacity : **0.68**. Большее количество мест в реторане положительно влияет на выручку.  
